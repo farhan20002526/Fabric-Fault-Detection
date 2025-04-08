@@ -19,3 +19,28 @@ To run this project locally, follow these steps:
 ```bash
 git clone https://github.com/farhan20002526/Fabric-Fault-Detection.git
 cd Fabric-Fault-Detection
+
+
+2. Create a virtual environment and install dependencies
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+pip install -r requirements.txt
+3. Download the pre-trained YOLOv8 model
+Download the model weights and place them in the models/ directory. You can find the pretrained model weights here.
+
+4. Run the Streamlit app
+bash
+Copy
+Edit
+streamlit run app.py
+Your app will be accessible at http://localhost:8501.
+
+Usage
+Once the application is running, you can upload fabric images or videos through the Streamlit interface. The model will process the media and highlight any detected faults in the fabric. The results will be displayed in real-time.
+
+Input: Upload images or videos of fabric.
+
+Output: Visualizations of the detected faults.
